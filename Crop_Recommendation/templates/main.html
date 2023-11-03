@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Crop Prediction</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body {
+              background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');
+              background-size: cover; 
+            }
+            </style>
+    </head>
+
+    <body>
+        <h1 class="text-center text-5xl my-5">Welcome To Seed Prediction Platform</h1>
+        <form action="/Main" method="post">
+            <label for="" class="mx-10 my-2 text-xl ">Enter Value of Nitrogen</label>
+             <input class="rounded-lg text-center"  placeholder="Enter Value Of Nitrogen"  type="text" name="N" id="">
+              <br>
+              <br>
+             <label for="" class="mx-10 my-2 text-xl">Enter Value of Phosphrous</label>
+             <input class="rounded-lg text-center"  placeholder="Enter Value of Phosphrous"type="text" name="P" id="">
+             <br>
+             <br>
+             <label for="" class="mx-10 my-2 text-xl">Enter Value of Potassium</label>
+             <input class="rounded-lg text-center" placeholder="Enter Value of Potassium"   type="text" name="K" id="">
+             <br>
+             <br>
+             <label for="" class="mx-10 my-2 text-xl">Enter Value of Temperature </label>
+             <input class="rounded-lg text-center" placeholder="Enter Value of Temperature" type="text" name="T" id="">
+             <br>
+             <br>
+             <label for="" class="mx-10 my-2 text-xl">Enter Value of PH</label>
+             <input class="rounded-lg text-center"  placeholder="Enter Value of PH" type="text" name="PH" id="">
+             <br>
+             <br>
+             <label for="" class="mx-10 my-2 text-xl">Enter Value of Rainfall</label>
+             <input class="rounded-lg text-center" placeholder="Enter Value of Rainfall" type="text" name="R" id="">
+             <br>
+             <br>
+             <label for="" class="mx-10 my-2 text-xl">Enter Value of Humidity</label>
+             <input class="rounded-lg text-center" placeholder="Enter Value of Humidity" type="text" name="H" id="">
+
+             <button class="rounde bg-green-400 px-4" type="submit" value="Submit">Submit</button>
+        </form>
+    <h1 class="antialiased font-semibold font-sans ml-10 text-4xl mt-24">According to soil and environment condition Farmer can grow <t class="text-emerald-400">{{result}}</t> </h1>
+    </body>
+</html>

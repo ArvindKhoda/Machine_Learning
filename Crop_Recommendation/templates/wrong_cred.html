@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>AgriTech</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+        body {
+            background-image: url('https://images.pexels.com/photos/5555232/pexels-photo-5555232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size:100% 100% 
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class=" rounded-lg  bg-gradient-to-bl from-stone-400  to-green-900 border-solid  bg-green-200 mx-auto my-52 w-64 h-62">
+            <form action="/login" method="post">
+                <h1 class="px-28 py-2">Login</h1>
+                <label class="px-10">Email</label><br>
+                <input class="mx-10 w-48" type="email" name="email"><br>
+                <label class="px-10" for="">Password</label><br>
+                <input class="mx-10 w-48"  type="text" name="password"><br>
+                <input class="my-3 mx-10 py-1 px-5 bg-blue-400 rounded-full" type="Submit" value="Login" >
+            </form>
+            <h1 class="mx-5">Need an account <a href='/register'>Register</a></h1>
+        </div>
+        <h1 class="bg-red-500">Wrong Credentials,Please Enter Correct Email and Password</h1>
+    </body>
+</html>
